@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <a-layout>
-      <a-layout-header :style="{ position: 'fixed', zIndex: 1, width: '100%' }">
+      <a >
         <Navbar />
-      </a-layout-header>
+      </a>
       <a-layout-content>
         <router-view :key="$route.fullPath" />
       </a-layout-content>
@@ -23,21 +23,4 @@ export default {
 </script>
 
 <style>
-body {
-  margin: 0;
-  padding: 0;
-}
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-.ant-layout {
-  background: white !important;
-}
-.ant-layout-content {
-  margin-top: 64px;
-}
 </style>

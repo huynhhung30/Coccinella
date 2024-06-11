@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-show="items">
-      <div style="padding: 50px">
+      <div>
         <div v-show="!searchTerm" style="margin-bottom: 10px">
           categories
           <span v-for="cat in categories" :key="cat">

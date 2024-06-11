@@ -1,29 +1,49 @@
 <template>
   <div class="nav-container">
-    <router-link to="/">
-      <div class="logo">Shazz</div>
-    </router-link>
-    <a-input-search
-      placeholder="input search text"
-      enter-button
-      style="width: 250px"
-      @search="onSearch"
-      v-model="searchTerm"
-    />
-    <router-link to="/cart">
-      <a-badge :count="allProductLength">
-        <a href="#" class="head-example" />
-        <a-icon
-          type="shopping-cart"
-          :style="{ fontSize: '20px', marginTop: '3px' }"
-        />
-      </a-badge>
-    </router-link>
+      <div class="text logo">
+        <div class="logo-top">
+          <div class="text-shop">c</div>
+          <div class="text-shop">o</div>
+          <div class="text-shop">c</div>
+          <div class="text-shop">c</div>
+          <div class="text-shop">i</div>
+          <div class="text-shop">n</div>
+          <div class="text-shop">e</div>
+          <div class="text-shop">l</div>
+          <div class="text-shop">a</div>
+      </div>
+        <div class="logo-bot">
+          <div class="text-bottom">t</div>
+          <div class="text-bottom">h</div>
+          <div class="text-bottom">r</div>
+          <div class="text-bottom">i</div>
+          <div class="text-bottom">f</div>
+          <div class="text-bottom">t</div>
+          <div class="text-bottom">s</div>
+          <div class="text-bottom">h</div>
+          <div class="text-bottom">o</div>
+          <div class="text-bottom">p</div>
+        </div>
+      </div>
+    <div class="text contract">
+      <div class="phone">
+        <img src="@/assets/images/phone.svg" />
+        + 09000999</div>
+      <div class="email">
+        <img src="@/assets/images/gmail.svg" />
+        info@gmail.com
+      </div>
+    </div>
+    <div class="picture">
+      <img src="@/assets/images/coccinella.jpg" />
+    </div>
+
   </div>
 </template>
 
 <script>
 import { mapGetters } from 'vuex';
+
 export default {
   name: 'Navbar',
   data() {
@@ -46,16 +66,6 @@ export default {
 </script>
 
 <style>
-.nav-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.nav-container .logo {
-  font-size: 24px;
-  font-weight: bolder;
-  font-style: oblique;
-  text-transform: uppercase;
-  font-variant: all-petite-caps;
-}
+@import "../assets/scss/navbar.scss";
+
 </style>

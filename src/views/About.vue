@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <a-space direction="vertical" size="large" style="padding: 50px 30px">
+    <a-space direction="vertical" size="large">
       <a-row type="flex" justify="center">
         <a-col :span="16">
           <h2>About us</h2>

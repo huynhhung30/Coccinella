@@ -1,7 +1,7 @@
 <template>
   <div>
     <div v-if="product">
-      <a-space direction="vertical" size="large" style="padding: 50px 30px">
+      <a-space direction="vertical" size="large">
         <h2>{{ product.title }}</h2>
         <a-row :gutter="[24, 24]">
           <div class="align-item">

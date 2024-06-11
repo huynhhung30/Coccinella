@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
+import CoccinellaHome from '../views/CoccinellaHome.vue';
 import ProductDetails from '../views/ProductDetails.vue';
 import Cart from '../views/Cart.vue';
 import Checkout from '../views/Checkout.vue';
@@ -9,6 +10,13 @@ import Search from '../views/Search.vue';
 Vue.use(VueRouter);
 
 const routes = [
+  {
+    path: '/coccinella',
+    name: 'CoccinellaHome',
+    component: CoccinellaHome,
+  },
+
+  // =-=-=-=-coccinella shop=-=-=-=-=-
   {
     path: '/',
     name: 'Home',

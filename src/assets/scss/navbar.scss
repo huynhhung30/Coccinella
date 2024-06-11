@@ -1,0 +1,71 @@
+
+.nav-container {
+  a, div{
+    color: black;
+  }
+  .picture{
+    img{
+      height: 61px;
+      width: 180px;
+    }
+
+  }
+.contract{
+  font-weight: bolder;
+  font-family:monospace;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between; 
+  width: 300px;
+  align-items: center;
+  .email{
+    img{
+      height: 20px;
+    }
+  }
+  .phone{
+    img{
+      height: 17px;
+    }
+  }
+
+}
+    background-color: #d9a23b;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .nav-container .logo {  
+    font-size: 24px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-variant: all-petite-caps;
+    font-size: 24px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-variant: all-petite-caps;
+    .logo-top{
+      display: flex;
+      justify-content: space-between;
+      font-size: 35px;
+      height: 44px;
+      border-bottom: 3px solid black;
+      .text-shop{
+
+      }
+
+    }
+    .logo-bot{
+      display: flex;
+      justify-content: space-between;
+      font-size: 18px;
+      margin-top: -10px;
+    
+.text-bottom{
+
+}
+
+
+    }
+
+  }
