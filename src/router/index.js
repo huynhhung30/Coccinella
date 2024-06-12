@@ -10,17 +10,18 @@ import Search from '../views/Search.vue';
 Vue.use(VueRouter);
 
 const routes = [
-  {
-    path: '/coccinella',
-    name: 'CoccinellaHome',
-    component: CoccinellaHome,
-  },
+
 
   // =-=-=-=-coccinella shop=-=-=-=-=-
   {
     path: '/',
     name: 'Home',
     component: Home,
+  },
+  {
+    path: '/coccinella',
+    name: 'CoccinellaHome',
+    component: CoccinellaHome,
   },
   {
     path: '/product/:id',
