@@ -1,5 +1,6 @@
 <template>
   <div class="nav-container">
+    <div class="nav-top">
       <div class="text logo">
         <div class="logo-top">
           <div class="text-shop">c</div>
@@ -27,8 +28,9 @@
       </div>
     <div class="text contract">
       <div class="phone">
-        <img src="@/assets/images/phone.svg" />
-        + 09000999</div>
+        <img src="@/assets/images/ig.svg" />
+        coccinella_thriftshop
+      </div>
       <div class="email">
         <img src="@/assets/images/gmail.svg" />
         info@gmail.com
@@ -37,8 +39,23 @@
     <div class="picture">
       <img src="@/assets/images/coccinella.jpg" />
     </div>
-
   </div>
+  <div class="nav-bottom">
+    <div class="button">home</div>
+    <div class="button">about us</div>
+    <div class="button">contract</div>
+    <div class="button">topics</div>
+    <div class="button">reel</div>
+    <div class="logo-coccinella">
+    <img src="@/assets/images/cocc.jpg" />
+  </div>
+  </div>
+
+  
+</div>
+
+      
+
 </template>
 
 <script>
