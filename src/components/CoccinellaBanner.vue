@@ -1,31 +1,21 @@
 <template>
     <div class="banner">
-      <a-carousel autoplay arrows>
-        <div
-          slot="prevArrow"
-          class="custom-slick-arrow"
-          style="left: 10px; z-index: 10"
-        >
-          <a-icon type="left-circle" />
-        </div>
-        <div slot="nextArrow" class="custom-slick-arrow" style="right: 10px">
-          <a-icon type="right-circle" />
-        </div>
-        <div class="carousel-wrapper">
-          <img
-            src="../assets/images/banner3.jpg"
-            width="100%"
-            alt=""
-          />
-        </div>
-        <div class="carousel-wrapper">
-          <img src="../assets/images/banner2.jpg" width="100%" alt="" />
-        </div>
-  
-        <div class="carousel-wrapper">
-          <img src="../assets/images/banner4.png" width="100%" alt="" />
-        </div>
-      </a-carousel>
+      <a-carousel arrows>
+    <template #prevArrow>
+      <div class="custom-slick-arrow" style="left: 10px; z-index: 1">
+        <left-circle-outlined />
+      </div>
+    </template>
+    <template #nextArrow>
+      <div class="custom-slick-arrow" style="right: 10px">
+        <right-circle-outlined />
+      </div>
+    </template>
+    <div><h3>1</h3></div>
+    <div><h3>2</h3></div>
+    <div><h3>3</h3></div>
+    <div><h3>4</h3></div>
+  </a-carousel>
     </div>
   </template>
   
@@ -35,111 +25,8 @@
   };
   </script>
   
-  <style scoped>
-  .ant-carousel >>> .slick-slide {
-    text-align: center;
-    height: 500px;
-    overflow: hidden;
-  }
-  .ant-carousel >>> .slick-slide h3 {
-    color: #000;
-  }
-  .ant-carousel >>> .slick-dots li button {
-    background: #000;
-  }
-  .ant-carousel >>> .slick-dots li.slick-active button {
-    background: #1890ff !important;
-  }
-  .carousel-wrapper {
-    position: relative;
+  <style lang="scss" scoped>
 
-  }
-  .carousel-wrapper > div {
-    position: absolute;
-    top: 160px;
-    left: 120px;
-  }
-  
-  .ant-carousel >>> .custom-slick-arrow {
-    width: 25px;
-    height: 25px;
-    font-size: 25px;
-    color: rgb(2, 2, 2);
-    /* background-color: rgba(31, 45, 61, 0.11); */
-    opacity: 0.3;
-  }
-  .ant-carousel >>> .custom-slick-arrow:before {
-    display: none;
-  }
-  .ant-carousel >>> .custom-slick-arrow:hover {
-    color: rgb(2, 2, 2);
-    opacity: 0.7;
-  }
-  
-  @media (max-width: 1000px) {
-    .ant-carousel >>> .slick-slide {
-      text-align: center;
-      height: 350px;
-      overflow: hidden;
-    }
-    .carousel-wrapper > div {
-      position: absolute;
-      top: 100px;
-      left: 120px;
-    }
-    .smallfont {
-      font-size: 12px;
-    }
-  }
-  @media (max-width: 700px) {
-    .ant-carousel >>> .slick-slide {
-      text-align: center;
-      height: 250px;
-      overflow: hidden;
-    }
-    .carousel-wrapper > div {
-      position: absolute;
-      top: 20px;
-      left: 120px;
-    }
-    .smallfont {
-      font-size: 10px;
-    }
-  }
-  @media (max-width: 550px) {
-    .smallfont {
-      font-size: 7px;
-    }
-  }
-  @media (max-width: 450px) {
-    .ant-carousel >>> .slick-slide {
-      text-align: center;
-      height: 250px;
-      overflow: hidden;
-    }
-    .carousel-wrapper > div {
-      position: absolute;
-      top: 40px;
-      left: 80px;
-    }
-    .smallfont {
-      font-size: 7px;
-    }
-  }
-  @media (max-width: 360px) {
-    .ant-carousel >>> .slick-slide {
-      text-align: center;
-      height: 150px;
-      overflow: hidden;
-    }
-    .carousel-wrapper > div {
-      position: absolute;
-      top: 10px;
-      left: 60px;
-    }
-    .smallfont {
-      font-size: 5px;
-    }
-  }
-  </style>
-  
+  @import "~sass-rem";
+  @import "../assets/scss/CoccinellaBanner.scss";
+</style>

@@ -1,0 +1,44 @@
+
+.banner{
+  .slick-slide {
+
+   
+  }
+}
+::v-deep .slick-slide {
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+
+  overflow: hidden;
+  }
+   .slick-arrow.custom-slick-arrow{
+    
+  }
+  ::v-deep .slick-arrow.custom-slick-arrow:before {
+  background: #020202;
+ 
+  }
+  ::v-deep .slick-arrow.custom-slick-arrow:hover {
+    color: #020202;
+    opacity: 0.5;
+    background: #020202;
+  }
+  
+
+
+
+
+:deep(.slick-arrow) {
+  background-color: #020202;
+}
+
+::v-deep .slick-arrow .custom-slick-arrow{
+  width: 25px;
+  height: 25px;
+  font-size: 25px;
+  background-color: #d53939;
+  transition: ease all 0.3s;
+  opacity: 0.3;
+  z-index: 1;
+}
