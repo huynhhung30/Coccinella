@@ -2,6 +2,9 @@
 .nav-container{
   background-color: #072e2f;;
   .nav-top {
+    img{
+      height: 26px;
+    }
     .logo {  
       font-size: 24px;
       font-weight: bolder;
@@ -54,7 +57,7 @@
     }
   
   }
-      background-color: #d9a23b;
+      background-color: #ffff;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
@@ -63,7 +66,7 @@
       display: flex;
       height: auto;
       margin: 0 auto;
-      color: #d9a23b;
+      color: #ffff;
       font-size: 18px;
       font-weight: bolder;
       font-variant: all-petite-caps;
@@ -79,7 +82,7 @@
         animation-iteration-count: infinite;
         transform-origin: bottom;
         &:hover {
-          background-color: #d9a23b;
+          background-color: #ffff;
           color: #072e2f;
           animation-name: bounce;
           animation-timing-function: ease;
@@ -99,9 +102,7 @@
         transform-origin: bottom;
         display:block;
         margin:auto;
-        img{
-          height: 40px;
-        }
+
         
       }
     }
@@ -109,10 +110,5 @@
 @keyframes bounce {
   0%   { transform: translateY(0); }
   50%  { transform: translateY(-3px); }
-  100% { transform: translateY(0); }
-}
-@keyframes coccinella {
-  0%   { transform: translateY(0); }
-  50%  { transform: translateY(-50px); }
   100% { transform: translateY(0); }
 }

@@ -4,7 +4,7 @@
       <div class="text logo">
         <div class="logo-top">
           <div class="text-shop">c</div>
-          <div class="text-shop">o</div>
+          <div class="text-shop"> <img src="@/assets/images/cocc.jpg" /></div>
           <div class="text-shop">c</div>
           <div class="text-shop">c</div>
           <div class="text-shop">i</div>
@@ -47,7 +47,7 @@
     <div class="button">topics</div>
     <div class="button">reel</div>
     <div class="logo-coccinella">
-    <img src="@/assets/images/cocc.jpg" />
+   
   </div>
   </div>
 
