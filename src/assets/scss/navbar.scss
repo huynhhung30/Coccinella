@@ -1,7 +1,10 @@
 
 .nav-container{
   background-color: #072e2f;;
+  padding-top: 0px !important;
   .nav-top {
+
+    width: -webkit-fill-available;
     img{
       height: 26px;
     }

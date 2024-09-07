@@ -2,7 +2,7 @@
   <div id="app">
     <a-layout>
       <a >
-        <Navbar />
+        <Navbar class="navbar"/>
       </a>
       <a-layout-content>
         <router-view :key="$route.fullPath" />
@@ -22,5 +22,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss" scoped>
+  @import "~sass-rem";
+  @import "./assets/scss/app.scss";
 </style>

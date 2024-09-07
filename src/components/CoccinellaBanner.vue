@@ -25,12 +25,39 @@
           >
         </template>
       </b-carousel-slide>
+      <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img"
+            src="../assets/images/banner7.jpg"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
+      <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img"
+            src="../assets/images/banner6.jpg"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
+      <b-carousel-slide>
+        <template #img>
+          <img
+            class="d-block img"
+            src="../assets/images/banner4.jpg"
+            alt="image slot"
+          >
+        </template>
+      </b-carousel-slide>
       <!-- Slides with custom text -->
       <b-carousel-slide >
         <template #img>
           <img
             class="d-block img"
-            src="../assets/images/banner6.jpg"
+            src="../assets/images/banner4.jpg"
             alt="image slot"
           >
         </template>

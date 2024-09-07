@@ -1,21 +1,24 @@
 <template>
     <div class="home">
-      <CoccinellaBanner />
-      <Product />
+      <CoccinellaBanner class="banner"/>
+      <ProductCoccinella />
     </div>
   </template>
   
   <script>
   import CoccinellaBanner from "@/components/CoccinellaBanner.vue";
-  import Product from "@/components/Product.vue";
+  import ProductCoccinella from "@/components/ProductCoccinella.vue";
   export default {
     name: "CoccinellaHome",
     components: {
         CoccinellaBanner,
-            Product,
+        ProductCoccinella,
     },
   };
   </script>
   
-  <style></style>
+  <style lang="scss" scoped>
+  @import "~sass-rem";
+    @import "../assets/scss/CoccinellaHome.scss";
+  </style>
   

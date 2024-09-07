@@ -1,8 +1,10 @@
-.msg {
-    width: 1024px;
-    height: 768px;
-    background: #919890;
-    .title {
-        font-size: 15px;
+
+.app{
+    
+    .navbar{
+        top: 0;
+        position: sticky;
+        position: -webkit-sticky;
     }
+
 }
