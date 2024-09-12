@@ -4,11 +4,10 @@
       id="carousel-1"
       v-model="slide"
       :interval="4000"
-      controls 
-     
+      controls
       no-animation
-       style="text-shadow: 1px 1px 2px #333;"
-           img-width="1024"
+      style="text-shadow: 1px 1px 2px #333"
+      img-width="1024"
       img-height="480"
       label-next=""
       label-prev=""
@@ -18,81 +17,57 @@
       <!-- Text slides with image -->
       <b-carousel-slide>
         <template #img>
-          <img
-            class="d-block img"
-            src="../assets/images/banner8.png"
-            alt="image slot"
-          >
+          <img class="d-block img" :src="bannerImage" alt="image slot" />
         </template>
       </b-carousel-slide>
       <b-carousel-slide>
         <template #img>
-          <img
-            class="d-block img"
-            src="../assets/images/banner7.jpg"
-            alt="image slot"
-          >
+          <img class="d-block img" :src="bannerImageFirst" alt="image slot" />
         </template>
       </b-carousel-slide>
       <b-carousel-slide>
         <template #img>
-          <img
-            class="d-block img"
-            src="../assets/images/banner6.jpg"
-            alt="image slot"
-          >
+          <img class="d-block img" :src="bannerImageSecond" alt="image slot" />
         </template>
       </b-carousel-slide>
-      <b-carousel-slide>
-        <template #img>
-          <img
-            class="d-block img"
-            src="../assets/images/banner4.jpg"
-            alt="image slot"
-          >
-        </template>
-      </b-carousel-slide>
-      <!-- Slides with custom text -->
-      <b-carousel-slide >
-        <template #img>
-          <img
-            class="d-block img"
-            src="../assets/images/banner4.jpg"
-            alt="image slot"
-          >
-        </template>
-      </b-carousel-slide>
+
       <!-- Slides with image only -->
     </b-carousel>
-
   </div>
-  </template>
-  
-  <script>
-  export default {
-    name: "CoccinellaBanner",
+</template>
 
-    data() {
+<script>
+export default {
+  name: 'CoccinellaBanner',
+
+  data() {
     return {
       slide: 0,
       sliding: null,
+      bannerImage:
+        'https://images.vans.com/is/image/VansBrand/FA24%5FOmniMTE%2DAugust%5FDotCom%5FSurfHP%2DDesktop?$fullres$',
+      bannerImageFirst:
+        'https://images.vans.com/is/image/VansBrand/FA24_Rowan_July_HP_d?$fullres$',
+      bannerImageSecond:
+        'https://images.vans.com/is/image/VansBrand/DESKTOPSNOW%5F1400x600?$fullres$',
+      imageFirst2:
+        'https://images.vans.com/is/image/Vans/VN0A5FCD_Y04_ALT1?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0',
     };
-    },
-    methods: {
-      onSlideStart(slide) {
-        console.log(slide)
+  },
+  methods: {
+    onSlideStart(slide) {
+      console.log(slide);
       this.sliding = true;
     },
     onSlideEnd(slide) {
-      console.log(slide)
+      console.log(slide);
       this.sliding = false;
     },
   },
+};
+</script>
 
-  }
-  </script>
-  
 <style lang="scss" scoped>
-@import "~sass-rem";
-  @import "../assets/scss/CoccinellaBanner.scss";
+@import '~sass-rem';
+@import '../assets/scss/CoccinellaBanner.scss';
 </style>

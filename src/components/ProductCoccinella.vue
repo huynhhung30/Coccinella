@@ -58,6 +58,102 @@
             <div class="child price">$29</div>
           </div>
         </b-col>
+        <b-col>
+          <div class="item">
+            <div class="child image">
+              <a class="hover_image" href="#">
+                <!-- path/to/first/visible/image: -->
+                <img :src="imageFirst3" />
+
+                <!-- path/to/hover/visible/image: -->
+                <img :src="imageS3" class="hide" />
+              </a>
+            </div>
+            <div class="child name">Vans</div>
+            <div class="child color">Red</div>
+            <div class="child price">$29</div>
+          </div>
+        </b-col>
+        <b-col>
+          <div class="item">
+            <div class="child image">
+              <a class="hover_image" href="#">
+                <!-- path/to/first/visible/image: -->
+                <img :src="imageFirst3" />
+
+                <!-- path/to/hover/visible/image: -->
+                <img :src="imageS3" class="hide" />
+              </a>
+            </div>
+            <div class="child name">Vans</div>
+            <div class="child color">Red</div>
+            <div class="child price">$29</div>
+          </div>
+        </b-col>
+        <b-col>
+          <div class="item">
+            <div class="child image">
+              <a class="hover_image" href="#">
+                <!-- path/to/first/visible/image: -->
+                <img :src="imageFirst3" />
+
+                <!-- path/to/hover/visible/image: -->
+                <img :src="imageS3" class="hide" />
+              </a>
+            </div>
+            <div class="child name">Vans</div>
+            <div class="child color">Red</div>
+            <div class="child price">$29</div>
+          </div>
+        </b-col>
+        <b-col>
+          <div class="item">
+            <div class="child image">
+              <a class="hover_image" href="#">
+                <!-- path/to/first/visible/image: -->
+                <img :src="imageFirst3" />
+
+                <!-- path/to/hover/visible/image: -->
+                <img :src="imageS3" class="hide" />
+              </a>
+            </div>
+            <div class="child name">Vans</div>
+            <div class="child color">Red</div>
+            <div class="child price">$29</div>
+          </div>
+        </b-col>
+        <b-col>
+          <div class="item">
+            <div class="child image">
+              <a class="hover_image" href="#">
+                <!-- path/to/first/visible/image: -->
+                <img :src="imageFirst3" />
+
+                <!-- path/to/hover/visible/image: -->
+                <img :src="imageS3" class="hide" />
+              </a>
+            </div>
+            <div class="child name">Vans</div>
+            <div class="child color">Red</div>
+            <div class="child price">$29</div>
+          </div>
+        </b-col>
+        <b-col>
+          <div class="item">
+            <div class="child image">
+              <a class="hover_image" href="#">
+                <!-- path/to/first/visible/image: -->
+                <img :src="imageFirst3" />
+
+                <!-- path/to/hover/visible/image: -->
+                <img :src="imageS3" class="hide" />
+              </a>
+            </div>
+            <div class="child name">Vans</div>
+            <div class="child color">Red</div>
+            <div class="child price">$29</div>
+          </div>
+        </b-col>
       </b-row>
     </b-container>
   </div>
