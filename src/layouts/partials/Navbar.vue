@@ -4,7 +4,7 @@
       <div class="text logo">
         <div class="logo-top">
           <div class="text-shop">c</div>
-          <div class="text-shop"> <img src="@/assets/images/cocc.jpg" /></div>
+          <div class="text-shop"><img src="@/assets/images/cocc.jpg" /></div>
           <div class="text-shop">c</div>
           <div class="text-shop">c</div>
           <div class="text-shop">i</div>
@@ -12,7 +12,7 @@
           <div class="text-shop">e</div>
           <div class="text-shop">l</div>
           <div class="text-shop">a</div>
-      </div>
+        </div>
         <div class="logo-bot">
           <div class="text-bottom">t</div>
           <div class="text-bottom">h</div>
@@ -26,36 +26,29 @@
           <div class="text-bottom">p</div>
         </div>
       </div>
-    <div class="text contract">
-      <div class="phone">
-        <img src="@/assets/images/ig.svg" />
-        coccinella_thriftshop
+      <div class="text contract">
+        <div class="phone">
+          <img src="@/assets/images/ig.svg" />
+          coccinella_thriftshop
+        </div>
+        <div class="email">
+          <img src="@/assets/images/gmail.svg" />
+          info@gmail.com
+        </div>
       </div>
-      <div class="email">
-        <img src="@/assets/images/gmail.svg" />
-        info@gmail.com
+      <div class="picture">
+        <img src="@/assets/images/coccinella.jpg" />
       </div>
     </div>
-    <div class="picture">
-      <img src="@/assets/images/coccinella.jpg" />
+    <div class="nav-bottom">
+      <div class="button">home</div>
+      <div class="button">about us</div>
+      <div class="button">contract</div>
+      <div class="button">topics</div>
+      <div class="button">reel</div>
+      <div class="logo-coccinella"></div>
     </div>
   </div>
-  <div class="nav-bottom">
-    <div class="button">home</div>
-    <div class="button">about us</div>
-    <div class="button">contract</div>
-    <div class="button">topics</div>
-    <div class="button">reel</div>
-    <div class="logo-coccinella">
-   
-  </div>
-  </div>
-
-  
-</div>
-
-      
-
 </template>
 
 <script>
@@ -83,6 +76,5 @@ export default {
 </script>
 
 <style>
-@import "../assets/scss/navbar.scss";
-
+@import '../../assets/scss/navbar.scss';
 </style>

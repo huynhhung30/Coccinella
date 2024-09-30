@@ -5,26 +5,25 @@
   }
 }
 ::v-deep .carousel-control-prev-icon {
-  background-image: url("../assets/images/arrow-left-banner.svg");
+  // background-image: url("../assets/images/arrow-left-banner.svg");
   color: #535252;
   width: 17px;
   height: 34px;
 }
 
 ::v-deep .carousel-control-next-icon {
-  background-image: url("../assets/images/arrow-right-banner.svg");
+  // background-image: url("../assets/images/arrow-right-banner.svg");
   color: #535252;
   width: 17px;
   height: 34px;
 }
 
-
 ::v-deep .img {
-  height:100vh!important ;
+  height: 100vh !important ;
   width: 100%;
 }
 
-::v-deep .sr-only{
+::v-deep .sr-only {
 }
 
 /*::v-deep .carousel-indicators li {

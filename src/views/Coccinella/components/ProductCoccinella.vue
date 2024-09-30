@@ -160,7 +160,7 @@
 </template>
 
 <script>
-import { apiMixin } from '../mixins';
+import { apiMixin } from '../../../mixins';
 import axios from 'axios';
 import { mapState, mapMutations } from 'vuex';
 
@@ -238,5 +238,5 @@ export default {
 
 <style lang="scss" scoped>
 @import '~sass-rem';
-@import '../assets/scss/ProductCoccinella.scss';
+@import '../../../assets/scss/ProductCoccinella.scss';
 </style>

@@ -69,5 +69,5 @@ export default {
 
 <style lang="scss" scoped>
 @import '~sass-rem';
-@import '../assets/scss/CoccinellaBanner.scss';
+@import '../../../assets/scss/CoccinellaBanner.scss';
 </style>
