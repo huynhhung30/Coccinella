@@ -1,14 +1,17 @@
 <template>
-  <div class="home">ádasdasdasdasdsa</div>
+  <div class="home">
+    <ProductCoccinella />
+  </div>
 </template>
 
 <script>
+import ProductCoccinella from './components/ProductCoccinella';
 export default {
   name: 'CoccinellaHome',
   data() {
     return {};
   },
-  components: {},
+  components: { ProductCoccinella },
   mounted() {
     let header = document.querySelector('.nav');
     let style_down = `top:-100px`;

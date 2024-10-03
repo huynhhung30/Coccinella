@@ -7,6 +7,7 @@ export default new Vuex.Store({
   state: {
     cart: [],
     items: [],
+    isLoading: false,
   },
   mutations: {
     setItems(state, payload) {

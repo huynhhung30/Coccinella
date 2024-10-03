@@ -1,13 +1,14 @@
 <template>
   <div id="app">
-    <AppHeader />
+    <loading v-if="$store.state.isLoading" />
+    <AppHeader class="nav" />
     <router-view :key="$route.fullPath" />
   </div>
 </template>
 
 <script>
 import AppHeader from '@/layouts/partials/Navbar';
-
+import Loading from '../components/Loading.vue';
 export default {
   name: 'Coccinella',
   data() {
@@ -15,6 +16,7 @@ export default {
   },
   components: {
     AppHeader,
+    Loading,
   },
   mounted() {
     let header = document.querySelector('.nav');

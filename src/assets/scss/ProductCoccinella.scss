@@ -1,11 +1,13 @@
 .product {
   font-family: monospace;
   .item {
+    width: 395px;
+    height: 592px;
     img {
-      height: 460px;
+      width: 395px;
+      height: 495px;
     }
     .child {
-      height: 500px;
       margin-top: 5px;
     }
 
