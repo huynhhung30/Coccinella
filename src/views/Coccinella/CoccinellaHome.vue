@@ -1,17 +1,19 @@
 <template>
   <div class="home">
+    <Breadrumbs />
     <ProductCoccinella />
   </div>
 </template>
 
 <script>
 import ProductCoccinella from './components/ProductCoccinella';
+import Breadrumbs from '../../components/BreadCrumbs.vue';
 export default {
   name: 'CoccinellaHome',
   data() {
     return {};
   },
-  components: { ProductCoccinella },
+  components: { ProductCoccinella, Breadrumbs },
   mounted() {
     let header = document.querySelector('.nav');
     let style_down = `top:-100px`;

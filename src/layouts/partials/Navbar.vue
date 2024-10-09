@@ -1,5 +1,5 @@
 <template>
-  <div class="nav-container">
+  <div class="navbar">
     <div class="nav-top">
       <div class="text logo">
         <div class="logo-top">
