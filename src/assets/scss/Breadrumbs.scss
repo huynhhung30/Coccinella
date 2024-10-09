@@ -1,3 +1,24 @@
 .breadcrumb {
-  position: absolute;
+  font-size: 13px;
+  margin: 10px 0 10px 0;
+  width: 100%;
+  padding-left: 15px;
+
+  a {
+    color: #072e2f;
+    text-decoration: underline;
+    font-family: cursive;
+  }
+  a:hover {
+    color: #963d60;
+    cursor: pointer;
+    animation-timing-function: ease;
+    text-decoration: overline;
+    transition-delay: 0.1s;
+  }
+  span {
+    color: #072e2f;
+    text-decoration: none;
+    font-family: cursive;
+  }
 }

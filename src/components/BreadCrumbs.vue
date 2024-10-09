@@ -11,15 +11,11 @@ export default {
     return {
       items: [
         {
-          text: 'Admin',
+          text: 'Home',
           href: '#',
         },
         {
-          text: 'Manage',
-          href: '#',
-        },
-        {
-          text: 'Library',
+          text: 'Item',
           active: true,
         },
       ],
