@@ -20,8 +20,8 @@ export default {
   },
   mounted() {
     let header = document.querySelector('.nav');
-    let style_down = `top:-100px; position: fixed;`;
-    let style_up = `top:0px; position: sticky;`;
+    let style_down = `top:-100px; position: revert-layer; transition: 1s linear;`;
+    let style_up = `top:0px; position: sticky; transition: 1s linear;`;
     let last_height = 0;
     window.addEventListener('scroll', () => {
       let currentHeight = document.documentElement.scrollTop;

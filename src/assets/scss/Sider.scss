@@ -1,5 +1,16 @@
 .sider-bar {
-  background-color: wheat;
-  height: 100%;
-  top: 130px;
+  .item {
+    cursor: pointer;
+    height: 54px;
+    border-bottom: 0.5px solid #000000;
+    display: flex;
+    align-items: center;
+    text-transform: capitalize;
+    font-family: cursive;
+    position: sticky;
+  }
+  .item:hover {
+    text-transform: uppercase;
+    text-decoration: overline;
+  }
 }

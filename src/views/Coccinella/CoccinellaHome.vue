@@ -1,6 +1,7 @@
 <template>
   <div class="home">
     <Breadrumbs />
+    <banner />
     <ProductCoccinella />
   </div>
 </template>
@@ -8,12 +9,13 @@
 <script>
 import ProductCoccinella from './components/ProductCoccinella';
 import Breadrumbs from '../../components/BreadCrumbs.vue';
+import banner from './components/CoccinellaBanner.vue';
 export default {
   name: 'CoccinellaHome',
   data() {
     return {};
   },
-  components: { ProductCoccinella, Breadrumbs },
+  components: { ProductCoccinella, Breadrumbs, banner },
   mounted() {
     let header = document.querySelector('.nav');
     let style_down = `top:-100px`;
@@ -37,6 +39,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '~sass-rem';
-// @import '../../assets/scss/CoccinellaHome.scss';
+.home {
+  margin: 0 35px;
+}
 </style>

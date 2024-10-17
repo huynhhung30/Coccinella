@@ -13,7 +13,7 @@
       </div>
       <div class="carousel-wrapper">
         <img
-          src="https://themepure.net/template/vue/vue/img/bg/bg.jpg"
+          src="https://images.vans.com/is/image/VansBrand/HO24%5FKnuSkool%5FHP%5FPrimary%5Fd?$fullres$"
           width="100%"
           alt=""
         />
@@ -47,7 +47,7 @@
 
 <script>
 export default {
-  name: "Banner",
+  name: 'Banner',
 };
 </script>
 
