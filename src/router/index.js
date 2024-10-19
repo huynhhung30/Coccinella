@@ -1,6 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import Home from '../views/Home.vue';
+import CoccinellaItem from '../views/Coccinella/CoccinellaItem.vue';
 import CoccinellaHome from '../views/Coccinella/CoccinellaHome.vue';
 import ProductDetails from '../views/ProductDetails.vue';
 import Cart from '../views/Cart.vue';
@@ -14,12 +14,12 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home,
+    component: CoccinellaHome,
   },
   {
-    path: '/coccinella',
-    name: 'coccinella',
-    component: CoccinellaHome,
+    path: '/shoes',
+    name: 'item',
+    component: CoccinellaItem,
   },
   {
     path: '/product/:id',

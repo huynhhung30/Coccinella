@@ -1,9 +1,14 @@
 <template>
   <div class="product">
+    <img
+      src="https://images.vans.com/is/image/VansBrand/clp-hero-top?$fullres$"
+    />
     <TitlePage />
     <b-container fluid>
       <b-row>
-        <b-col cols="2"> <Sider /></b-col>
+        <b-col cols="2" class="side-panel">
+          <Sider />
+        </b-col>
         <b-col cols="10">
           <b-row>
             <b-col cols="4" v-for="(item, index) in data" :key="index">
@@ -52,7 +57,7 @@ export default {
             'https://images.vans.com/is/image/Vans/VN0A2Z34_B5P_ALT2?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0',
           theSecondImage:
             'https://images.vans.com/is/image/Vans/VN0A5FCD_Y04_ALT1?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0',
-          price: '50',
+          price: '70',
         },
         {
           name: 'Knu Skool Shoe',
@@ -60,7 +65,7 @@ export default {
             'https://images.vans.com/is/image/Vans/VN0A5FCD_Y52_ALT1?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0',
           theSecondImage:
             'https://images.vans.com/is/image/Vans/VN0A5FCD_Y52_ALT4?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0',
-          price: '50',
+          price: '150',
         },
         {
           name: 'Upland Shoe',
@@ -68,7 +73,7 @@ export default {
             'https://images.vans.com/is/image/Vans/VN000CVP_448_HERO?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0&quot;',
           theSecondImage:
             'https://images.vans.com/is/image/Vans/VN000CVP_448_ALT1?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0&quot;',
-          price: '50',
+          price: '40',
         },
         {
           name: 'MTE Crestline GORE-TEX Together As Ourselves Shoe',
@@ -76,7 +81,7 @@ export default {
             'https://images.vans.com/is/image/Vans/VN000CVV_448_HERO?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0&quot;',
           theSecondImage:
             'https://images.vans.com/is/image/Vans/VN000CVV_448_ALT1?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0&quot;',
-          price: '50',
+          price: '450',
         },
         {
           name: 'Dia De Muertos Sk8-Hi Shoe',
@@ -84,40 +89,9 @@ export default {
             'https://images.vans.com/is/image/Vans/VN0A32QG_BER_HERO?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0&quot;',
           theSecondImage:
             'https://images.vans.com/is/image/Vans/VN0A32QG_BER_ALT1?wid=1600&hei=1984&fmt=jpeg&qlt=90&resMode=sharp2&op_usm=0.9,1.7,8,0&quot;',
-          price: '50',
+          price: '30',
         },
       ],
-      mainProps: {
-        btn_img: `https://images.vans.com/is/image/Vans/VN000CP6_6BT_ALT1?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0`,
-      },
-      image:
-        'https://images.vans.com/is/image/Vans/VN0A2Z34_B5P_ALT4?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0',
-      imageFirst:
-        'https://images.vans.com/is/image/Vans/VN0A2Z34_B5P_ALT1?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0',
-      imageS:
-        'https://images.vans.com/is/image/Vans/VN0A2Z34_B5P_ALT2?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0',
-
-      imageFirst2:
-        'https://images.vans.com/is/image/Vans/VN0A5FCD_Y04_ALT1?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0',
-      imageS2:
-        'https://images.vans.com/is/image/Vans/VN0A5FCD_Y04_ALT4?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0',
-
-      imageFirst3:
-        'https://images.vans.com/is/image/Vans/VN0A5FCD_Y52_ALT1?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0',
-      imageS3:
-        'https://images.vans.com/is/image/Vans/VN0A5FCD_Y52_ALT4?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0',
-      imageFirst4:
-        'https://images.vans.com/is/image/Vans/VN000CVP_448_HERO?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0&quot;',
-      imageS4:
-        'https://images.vans.com/is/image/Vans/VN000CVP_448_ALT1?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0&quot;',
-      imageFirst5:
-        'https://images.vans.com/is/image/Vans/VN000CVV_448_HERO?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0&quot;',
-      imageS5:
-        'https://images.vans.com/is/image/Vans/VN000CVV_448_ALT1?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0&quot;',
-      imageFirst6:
-        'https://images.vans.com/is/image/Vans/VN0A32QG_BER_HERO?wid=800&hei=1004&fmt=jpeg&qlt=50&resMode=sharp2&op_usm=0.9,1.5,8,0&quot;',
-      imageS6:
-        'https://images.vans.com/is/image/Vans/VN0A32QG_BER_ALT1?wid=1600&hei=1984&fmt=jpeg&qlt=90&resMode=sharp2&op_usm=0.9,1.7,8,0&quot;',
     };
   },
   computed: {
@@ -165,7 +139,7 @@ export default {
     },
   },
   mounted() {
-    // setTimeout(() => (this.$store.state.isLoading = false), 1000);
+    setTimeout(() => (this.$store.state.isLoading = false), 1000);
   },
   mixins: [apiMixin],
   props: {

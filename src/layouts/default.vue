@@ -25,7 +25,7 @@ export default {
     let last_height = 0;
     window.addEventListener('scroll', () => {
       let currentHeight = document.documentElement.scrollTop;
-      console.log('currentHeight', currentHeight);
+
       if (currentHeight > last_height) {
         header.style.cssText = style_down;
       } else {

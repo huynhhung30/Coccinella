@@ -1,19 +1,21 @@
 <template>
   <div class="home">
+    <Breadrumbs />
     <banner />
-    <Category />
+    <ProductCoccinella />
   </div>
 </template>
 
 <script>
+import ProductCoccinella from './components/ProductCoccinella.vue';
+import Breadrumbs from '../../components/BreadCrumbs.vue';
 import banner from './components/CoccinellaBanner.vue';
-import Category from './components/Category.vue';
 export default {
-  name: 'CoccinellaHome',
+  name: 'CoccinellaItem',
   data() {
     return {};
   },
-  components: { banner, Category },
+  components: { ProductCoccinella, Breadrumbs, banner },
   mounted() {
     let header = document.querySelector('.nav');
     let style_down = `top:-100px`;
@@ -21,6 +23,7 @@ export default {
     let last_height = 0;
     window.addEventListener('scroll', () => {
       let currentHeight = document.documentElement.scrollTop;
+
       if (currentHeight > last_height) {
         header.style.cssText = style_down;
       } else {
