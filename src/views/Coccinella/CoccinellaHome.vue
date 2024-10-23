@@ -15,6 +15,7 @@
       ></b-icon>
     </div>
     <banner />
+    <Carousel />
     <Category />
   </div>
 </template>
@@ -22,12 +23,13 @@
 <script>
 import banner from './components/CoccinellaBanner.vue';
 import Category from './components/Category.vue';
+import Carousel from './components/Carousel.vue';
 export default {
   name: 'CoccinellaHome',
   data() {
     return {};
   },
-  components: { banner, Category },
+  components: { banner, Category, Carousel },
   mounted() {
     let header = document.querySelector('.nav');
     let lockDiv = document.querySelector('.lock');
@@ -55,8 +57,6 @@ export default {
 
   methods: {
     scrollHead() {
-      // let currentHeight = document.documentElement.scrollTop;
-      // console.log('currentHeight', currentHeight);
       window.scrollTo(0, 0);
     },
   },
