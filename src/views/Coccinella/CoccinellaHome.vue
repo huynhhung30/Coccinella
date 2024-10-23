@@ -16,6 +16,7 @@
     </div>
     <banner />
     <Carousel />
+    <topic />
     <Category />
   </div>
 </template>
@@ -24,12 +25,13 @@
 import banner from './components/CoccinellaBanner.vue';
 import Category from './components/Category.vue';
 import Carousel from './components/Carousel.vue';
+import topic from './components/Topic.vue';
 export default {
   name: 'CoccinellaHome',
   data() {
     return {};
   },
-  components: { banner, Category, Carousel },
+  components: { banner, Category, Carousel, topic },
   mounted() {
     let header = document.querySelector('.nav');
     let lockDiv = document.querySelector('.lock');
