@@ -30,11 +30,20 @@ export default {
   components: { banner, Category },
   mounted() {
     let header = document.querySelector('.nav');
+    let lockDiv = document.querySelector('.lock');
+    // let editLock = `display: inline;`;
     let style_down = `top:-100px`;
     let style_up = `top:0px;`;
     let last_height = 0;
+
     window.addEventListener('scroll', () => {
       let currentHeight = document.documentElement.scrollTop;
+      if (currentHeight === 0) {
+        console.log('currentHeight', currentHeight);
+        lockDiv.style.cssText = `display: none;`;
+      } else {
+        lockDiv.style.cssText = `display: inline;`;
+      }
       if (currentHeight > last_height) {
         header.style.cssText = style_down;
       } else {
@@ -43,8 +52,11 @@ export default {
       last_height = currentHeight <= 0 ? 0 : currentHeight;
     });
   },
+
   methods: {
     scrollHead() {
+      // let currentHeight = document.documentElement.scrollTop;
+      // console.log('currentHeight', currentHeight);
       window.scrollTo(0, 0);
     },
   },
